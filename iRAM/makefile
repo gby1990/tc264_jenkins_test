@@ -38,7 +38,7 @@ all: TC264_Hightec.elf
 TC264_Hightec.elf: $(OBJS) $(USER_OBJS) $(ASM)
 	@echo 'Building target: $@'
 	@echo 'Invoking: TriCore C Linker'
-	tricore-gcc -o  "TC264_Hightec.elf" -T"../ld/iRAM.ld" @"iRAM.objectlist" -Wl,--gc-sections -mcpu=tc26xx -Wl,--mem-holes -Wl,--no-warn-flags -Wl,-Map="$(basename $(notdir $@)).map" -Wl,--cref -fshort-double -Wl,-n -Wl,--extmap="a"
+	D:\HighTec\toolchains\tricore\v4.9.3.0-infineon-1.0\bin\tricore-gcc -o  "TC264_Hightec.elf" -T"../ld/iRAM.ld" @"iRAM.objectlist" -Wl,--gc-sections -mcpu=tc26xx -Wl,--mem-holes -Wl,--no-warn-flags -Wl,-Map="$(basename $(notdir $@)).map" -Wl,--cref -fshort-double -Wl,-n -Wl,--extmap="a"
 	@echo 'Finished building target: $@'
 	@echo ' '
 
