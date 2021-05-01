@@ -8,5 +8,7 @@
 
 int main(void)
 {
+	volatile unsigned int Main_yIndex_ldu32;
+	
 	return EXIT_SUCCESS;
 }
