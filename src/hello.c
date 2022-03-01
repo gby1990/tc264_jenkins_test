@@ -9,6 +9,7 @@
 int main(void)
 {
 	volatile unsigned int Main_yIndex_ldu32;
+	hello;
 	
 	return EXIT_SUCCESS;
 }
